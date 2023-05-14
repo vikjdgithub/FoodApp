@@ -1,0 +1,30 @@
+package linkedList_tut1.day1;
+
+public class Day2 {
+	
+	
+	static class Node{
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data=data;
+			this.next=null;
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	}
+	public void creation() {
+		
+	}
+	
+	public void traverse() {
+		
+	}
+	
+	public void deletion() {
+		
+	}
+}

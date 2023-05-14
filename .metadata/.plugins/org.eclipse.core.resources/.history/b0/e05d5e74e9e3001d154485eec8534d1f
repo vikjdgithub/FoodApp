@@ -1,0 +1,56 @@
+package linkedList_tut1.day1;
+
+import java.util.Scanner;
+
+public class Day2 {
+	
+	
+	static class Node{
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	Node head;
+	
+
+	public static void main(String[] args) {
+		
+	}
+	public void creation() {
+		int data,n;
+		Node temp;
+		@SuppressWarnings("resource")
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter data");
+		data=sc.nextInt();
+		Node new_node = new Node(data);
+		if (head==null) {
+			head=new_node;
+		} else {
+			// insertion at the begining
+             new_node.next=head;
+             head=new_node;
+           // insertion at the end
+//             temp=head;
+//             while(temp!=null) {
+//            	 temp=temp.next;
+//             }
+//             temp.next=new_node;
+			
+		}
+	}
+	
+	public void traverse() {
+		
+		
+	}
+	
+	public void deletion() {
+		
+	}
+}

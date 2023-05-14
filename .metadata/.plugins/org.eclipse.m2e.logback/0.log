@@ -1,0 +1,1174 @@
+2023-04-17 11:19:41,360 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-20 09:00:18,938 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-21 08:56:45,491 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-21 15:12:35,278 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-25 13:44:12,858 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-25 13:46:38,821 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:46:39,195 [Worker-6: Import Getting Started Content] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Could not read maven project
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:407)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:569)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:366)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:229)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:221)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:832)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:985)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:315)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:256)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:166)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:139)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:130)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:134)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:85)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:229)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+ for project  at C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:415)
+	... 29 common frames omitted
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:303)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:267)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 31 common frames omitted
+2023-04-25 13:46:39,812 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:46:39,822 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:46:40,464 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-web/3.0.6/spring-boot-starter-web-3.0.6-sources.jar
+2023-04-25 13:46:40,470 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-web:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-web:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,484 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter/3.0.6/spring-boot-starter-3.0.6-sources.jar
+2023-04-25 13:46:40,488 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,500 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot/3.0.6/spring-boot-3.0.6-sources.jar
+2023-04-25 13:46:40,503 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,516 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-autoconfigure/3.0.6/spring-boot-autoconfigure-3.0.6-sources.jar
+2023-04-25 13:46:40,521 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-autoconfigure:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-autoconfigure:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,541 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-logging/3.0.6/spring-boot-starter-logging-3.0.6-sources.jar
+2023-04-25 13:46:40,545 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-logging:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,560 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7-sources.jar
+2023-04-25 13:46:40,565 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for ch.qos.logback:logback-classic:1.4.7
+org.eclipse.core.runtime.CoreException: Could not resolve artifact ch.qos.logback:logback-classic:jar:sources:1.4.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,585 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7-sources.jar
+2023-04-25 13:46:40,590 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for ch.qos.logback:logback-core:1.4.7
+org.eclipse.core.runtime.CoreException: Could not resolve artifact ch.qos.logback:logback-core:jar:sources:1.4.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,603 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-json/3.0.6/spring-boot-starter-json-3.0.6-sources.jar
+2023-04-25 13:46:40,607 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-json:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-json:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,619 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-tomcat/3.0.6/spring-boot-starter-tomcat-3.0.6-sources.jar
+2023-04-25 13:46:40,622 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-tomcat:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-tomcat:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,633 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-core/10.1.8/tomcat-embed-core-10.1.8-sources.jar
+2023-04-25 13:46:40,635 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.apache.tomcat.embed:tomcat-embed-core:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-core:jar:sources:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,643 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-el/10.1.8/tomcat-embed-el-10.1.8-sources.jar
+2023-04-25 13:46:40,646 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.apache.tomcat.embed:tomcat-embed-el:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-el:jar:sources:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,657 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.8/tomcat-embed-websocket-10.1.8-sources.jar
+2023-04-25 13:46:40,660 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.apache.tomcat.embed:tomcat-embed-websocket:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-websocket:jar:sources:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,673 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-test/3.0.6/spring-boot-starter-test-3.0.6-sources.jar
+2023-04-25 13:46:40,677 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-test:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:40,683 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2023-04-25 13:46:40,687 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 13:46:40,916 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:46:41,180 [Worker-6: Import Getting Started Content] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Could not read maven project
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:407)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:569)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:366)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:229)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:221)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:832)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:985)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:315)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1102)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:326)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:308)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:296)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:139)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:85)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:229)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+ for project  at C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:415)
+	... 32 common frames omitted
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:303)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:267)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 34 common frames omitted
+2023-04-25 13:46:41,759 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:46:41,760 [Worker-6: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:46:42,284 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-web/3.0.6/spring-boot-starter-web-3.0.6-javadoc.jar
+2023-04-25 13:46:42,290 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-web:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-web:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,308 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter/3.0.6/spring-boot-starter-3.0.6-javadoc.jar
+2023-04-25 13:46:42,312 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,333 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot/3.0.6/spring-boot-3.0.6-javadoc.jar
+2023-04-25 13:46:42,339 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,356 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-autoconfigure/3.0.6/spring-boot-autoconfigure-3.0.6-javadoc.jar
+2023-04-25 13:46:42,360 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-autoconfigure:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-autoconfigure:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,379 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-logging/3.0.6/spring-boot-starter-logging-3.0.6-javadoc.jar
+2023-04-25 13:46:42,391 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-logging:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,406 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7-javadoc.jar
+2023-04-25 13:46:42,410 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for ch.qos.logback:logback-classic:1.4.7
+org.eclipse.core.runtime.CoreException: Could not resolve artifact ch.qos.logback:logback-classic:jar:javadoc:1.4.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,427 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7-javadoc.jar
+2023-04-25 13:46:42,431 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for ch.qos.logback:logback-core:1.4.7
+org.eclipse.core.runtime.CoreException: Could not resolve artifact ch.qos.logback:logback-core:jar:javadoc:1.4.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,459 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-json/3.0.6/spring-boot-starter-json-3.0.6-javadoc.jar
+2023-04-25 13:46:42,463 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-json:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-json:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,482 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-tomcat/3.0.6/spring-boot-starter-tomcat-3.0.6-javadoc.jar
+2023-04-25 13:46:42,487 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-tomcat:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-tomcat:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,509 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-core/10.1.8/tomcat-embed-core-10.1.8-javadoc.jar
+2023-04-25 13:46:42,512 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-core:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-core:jar:javadoc:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,530 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-el/10.1.8/tomcat-embed-el-10.1.8-javadoc.jar
+2023-04-25 13:46:42,537 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-el:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-el:jar:javadoc:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,554 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.8/tomcat-embed-websocket-10.1.8-javadoc.jar
+2023-04-25 13:46:42,558 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-websocket:10.1.8
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:10.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,576 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/boot/spring-boot-starter-test/3.0.6/spring-boot-starter-test-3.0.6-javadoc.jar
+2023-04-25 13:46:42,580 [Worker-8: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-test:3.0.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:46:42,640 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2023-04-25 13:47:11,351 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 13:47:12,635 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/cloud/spring-cloud-dependencies/2022.0.2/spring-cloud-dependencies-2022.0.2.pom
+2023-04-25 13:47:13,711 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/cloud/spring-cloud-dependencies/2022.0.2/spring-cloud-dependencies-2022.0.2.pom
+2023-04-25 13:47:13,724 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/org/springframework/cloud/spring-cloud-dependencies/2022.0.2/spring-cloud-dependencies-2022.0.2.pom
+2023-04-25 13:47:13,907 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:47:14,134 [Worker-8: Updating Maven Project] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Could not read maven project
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:407)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:569)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:366)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:229)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:221)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:873)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:832)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:985)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:315)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1102)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+ for project  at C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:415)
+	... 25 common frames omitted
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry: C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry (Access is denied) @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:303)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:267)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 27 common frames omitted
+2023-04-25 13:47:14,513 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:47:14,514 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:47:15,146 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 0.00 sec 
+2023-04-25 13:48:32,269 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-parent/2.7.11/spring-boot-starter-parent-2.7.11.pom
+2023-04-25 13:48:32,452 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-parent/2.7.11/spring-boot-starter-parent-2.7.11.pom
+2023-04-25 13:48:36,149 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-dependencies/2.7.11/spring-boot-dependencies-2.7.11.pom
+2023-04-25 13:48:37,232 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-dependencies/2.7.11/spring-boot-dependencies-2.7.11.pom
+2023-04-25 13:48:39,172 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/codehaus/groovy/groovy-bom/3.0.17/groovy-bom-3.0.17.pom
+2023-04-25 13:48:39,503 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/codehaus/groovy/groovy-bom/3.0.17/groovy-bom-3.0.17.pom
+2023-04-25 13:48:42,350 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-bom/1.9.10/micrometer-bom-1.9.10.pom
+2023-04-25 13:48:42,536 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-bom/1.9.10/micrometer-bom-1.9.10.pom
+2023-04-25 13:48:44,454 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-bom/2020.0.31/reactor-bom-2020.0.31.pom
+2023-04-25 13:48:44,634 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-bom/2020.0.31/reactor-bom-2020.0.31.pom
+2023-04-25 13:48:46,985 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/data/spring-data-bom/2021.2.11/spring-data-bom-2021.2.11.pom
+2023-04-25 13:48:47,166 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/data/spring-data-bom/2021.2.11/spring-data-bom-2021.2.11.pom
+2023-04-25 13:48:48,827 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-framework-bom/5.3.27/spring-framework-bom-5.3.27.pom
+2023-04-25 13:48:49,005 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-framework-bom/5.3.27/spring-framework-bom-5.3.27.pom
+2023-04-25 13:48:50,519 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/security/spring-security-bom/5.7.8/spring-security-bom-5.7.8.pom
+2023-04-25 13:48:50,693 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/security/spring-security-bom/5.7.8/spring-security-bom-5.7.8.pom
+2023-04-25 13:48:52,896 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/mdm-plugins-release/org/springframework/boot/spring-boot-maven-plugin/2.7.11/spring-boot-maven-plugin-2.7.11.pom
+2023-04-25 13:48:53,081 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/mdm-plugins-release/org/springframework/boot/spring-boot-maven-plugin/2.7.11/spring-boot-maven-plugin-2.7.11.pom
+2023-04-25 13:48:54,734 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/mdm-plugins-release/org/springframework/boot/spring-boot-maven-plugin/2.7.11/spring-boot-maven-plugin-2.7.11.jar
+2023-04-25 13:48:55,492 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/mdm-plugins-release/org/springframework/boot/spring-boot-maven-plugin/2.7.11/spring-boot-maven-plugin-2.7.11.jar
+2023-04-25 13:48:55,883 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:48:57,328 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-web/2.7.11/spring-boot-starter-web-2.7.11.pom
+2023-04-25 13:48:57,517 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-web/2.7.11/spring-boot-starter-web-2.7.11.pom
+2023-04-25 13:48:59,168 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter/2.7.11/spring-boot-starter-2.7.11.pom
+2023-04-25 13:48:59,356 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter/2.7.11/spring-boot-starter-2.7.11.pom
+2023-04-25 13:49:00,682 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot/2.7.11/spring-boot-2.7.11.pom
+2023-04-25 13:49:00,869 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot/2.7.11/spring-boot-2.7.11.pom
+2023-04-25 13:49:01,055 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-core/5.3.27/spring-core-5.3.27.pom
+2023-04-25 13:49:01,246 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-core/5.3.27/spring-core-5.3.27.pom
+2023-04-25 13:49:01,434 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-jcl/5.3.27/spring-jcl-5.3.27.pom
+2023-04-25 13:49:01,613 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-jcl/5.3.27/spring-jcl-5.3.27.pom
+2023-04-25 13:49:01,795 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context/5.3.27/spring-context-5.3.27.pom
+2023-04-25 13:49:01,973 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context/5.3.27/spring-context-5.3.27.pom
+2023-04-25 13:49:02,156 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-aop/5.3.27/spring-aop-5.3.27.pom
+2023-04-25 13:49:02,345 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-aop/5.3.27/spring-aop-5.3.27.pom
+2023-04-25 13:49:02,529 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-beans/5.3.27/spring-beans-5.3.27.pom
+2023-04-25 13:49:02,711 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-beans/5.3.27/spring-beans-5.3.27.pom
+2023-04-25 13:49:02,903 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-expression/5.3.27/spring-expression-5.3.27.pom
+2023-04-25 13:49:03,092 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-expression/5.3.27/spring-expression-5.3.27.pom
+2023-04-25 13:49:05,131 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11.pom
+2023-04-25 13:49:05,315 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11.pom
+2023-04-25 13:49:06,817 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-logging/2.7.11/spring-boot-starter-logging-2.7.11.pom
+2023-04-25 13:49:06,999 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-logging/2.7.11/spring-boot-starter-logging-2.7.11.pom
+2023-04-25 13:49:10,755 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-classic/1.2.12/logback-classic-1.2.12.pom
+2023-04-25 13:49:10,934 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-classic/1.2.12/logback-classic-1.2.12.pom
+2023-04-25 13:49:14,055 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-parent/1.2.12/logback-parent-1.2.12.pom
+2023-04-25 13:49:14,231 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-parent/1.2.12/logback-parent-1.2.12.pom
+2023-04-25 13:49:16,944 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-core/1.2.12/logback-core-1.2.12.pom
+2023-04-25 13:49:17,133 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-core/1.2.12/logback-core-1.2.12.pom
+2023-04-25 13:49:20,225 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-json/2.7.11/spring-boot-starter-json-2.7.11.pom
+2023-04-25 13:49:20,403 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-json/2.7.11/spring-boot-starter-json-2.7.11.pom
+2023-04-25 13:49:20,588 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-web/5.3.27/spring-web-5.3.27.pom
+2023-04-25 13:49:20,768 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-web/5.3.27/spring-web-5.3.27.pom
+2023-04-25 13:49:21,023 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-tomcat/2.7.11/spring-boot-starter-tomcat-2.7.11.pom
+2023-04-25 13:49:21,208 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-tomcat/2.7.11/spring-boot-starter-tomcat-2.7.11.pom
+2023-04-25 13:49:22,714 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-core/9.0.74/tomcat-embed-core-9.0.74.pom
+2023-04-25 13:49:22,897 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-core/9.0.74/tomcat-embed-core-9.0.74.pom
+2023-04-25 13:49:23,096 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-el/9.0.74/tomcat-embed-el-9.0.74.pom
+2023-04-25 13:49:23,285 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-el/9.0.74/tomcat-embed-el-9.0.74.pom
+2023-04-25 13:49:24,834 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.74/tomcat-embed-websocket-9.0.74.pom
+2023-04-25 13:49:25,028 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.74/tomcat-embed-websocket-9.0.74.pom
+2023-04-25 13:49:25,424 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27.pom
+2023-04-25 13:49:25,628 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27.pom
+2023-04-25 13:49:26,379 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8.pom
+2023-04-25 13:49:34,404 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8.pom
+2023-04-25 13:49:34,586 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8.pom
+2023-04-25 13:49:34,904 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11.pom
+2023-04-25 13:49:35,120 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11.pom
+2023-04-25 13:49:35,304 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11.pom
+2023-04-25 13:49:35,667 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11.pom
+2023-04-25 13:49:35,901 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11.pom
+2023-04-25 13:49:36,074 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11.pom
+2023-04-25 13:49:36,396 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11.pom
+2023-04-25 13:49:36,656 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11.pom
+2023-04-25 13:49:36,836 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11.pom
+2023-04-25 13:49:37,187 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10.pom
+2023-04-25 13:49:37,381 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10.pom
+2023-04-25 13:49:37,556 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10.pom
+2023-04-25 13:49:37,843 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.11/spring-boot-starter-freemarker-2.7.11.pom
+2023-04-25 13:49:38,344 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-freemarker/2.7.11/spring-boot-starter-freemarker-2.7.11.pom
+2023-04-25 13:49:38,874 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29.pom
+2023-04-25 13:49:39,042 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29.pom
+2023-04-25 13:49:39,326 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.11/spring-boot-starter-cache-2.7.11.pom
+2023-04-25 13:49:39,495 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-cache/2.7.11/spring-boot-starter-cache-2.7.11.pom
+2023-04-25 13:49:39,947 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-test/2.7.11/spring-boot-starter-test-2.7.11.pom
+2023-04-25 13:49:40,114 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-test/2.7.11/spring-boot-starter-test-2.7.11.pom
+2023-04-25 13:49:42,333 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 13:49:42,333 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:42,340 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:42,346 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 13:49:44,266 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 75 sec
+2023-04-25 13:49:44,267 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 13:49:44,748 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:49:48,693 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 13:49:48,694 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:48,695 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:48,696 [Worker-3: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 13:49:50,951 [Worker-3: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 4.00 sec, update config takes 2.00 sec 
+2023-04-25 13:49:51,042 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 13:49:52,149 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-web/2.7.11/spring-boot-starter-web-2.7.11-sources.jar
+2023-04-25 13:49:52,209 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:49:52,338 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-web/2.7.11/spring-boot-starter-web-2.7.11-sources.jar
+2023-04-25 13:49:52,350 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-web:2.7.11
+2023-04-25 13:49:53,207 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter/2.7.11/spring-boot-starter-2.7.11-sources.jar
+2023-04-25 13:49:53,386 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter/2.7.11/spring-boot-starter-2.7.11-sources.jar
+2023-04-25 13:49:53,398 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter:2.7.11
+2023-04-25 13:49:54,438 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot/2.7.11/spring-boot-2.7.11-sources.jar
+2023-04-25 13:49:56,091 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 13:49:56,092 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:56,093 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:49:56,095 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 13:49:56,683 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot/2.7.11/spring-boot-2.7.11-sources.jar
+2023-04-25 13:49:56,697 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot:2.7.11
+2023-04-25 13:49:57,560 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11-sources.jar
+2023-04-25 13:49:58,193 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 4.00 sec, update config takes 2.00 sec 
+2023-04-25 13:49:59,425 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-autoconfigure/2.7.11/spring-boot-autoconfigure-2.7.11-sources.jar
+2023-04-25 13:49:59,437 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-autoconfigure:2.7.11
+2023-04-25 13:50:01,705 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-logging/2.7.11/spring-boot-starter-logging-2.7.11-sources.jar
+2023-04-25 13:50:01,880 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-logging/2.7.11/spring-boot-starter-logging-2.7.11-sources.jar
+2023-04-25 13:50:01,893 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-logging:2.7.11
+2023-04-25 13:50:03,054 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-classic/1.2.12/logback-classic-1.2.12-sources.jar
+2023-04-25 13:50:04,021 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-classic/1.2.12/logback-classic-1.2.12-sources.jar
+2023-04-25 13:50:04,030 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for ch.qos.logback:logback-classic:1.2.12
+2023-04-25 13:50:04,910 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-core/1.2.12/logback-core-1.2.12-sources.jar
+2023-04-25 13:50:06,040 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/ch/qos/logback/logback-core/1.2.12/logback-core-1.2.12-sources.jar
+2023-04-25 13:50:06,051 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for ch.qos.logback:logback-core:1.2.12
+2023-04-25 13:50:06,916 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-core/5.3.27/spring-core-5.3.27-sources.jar
+2023-04-25 13:50:09,340 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-core/5.3.27/spring-core-5.3.27-sources.jar
+2023-04-25 13:50:09,351 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-core:5.3.27
+2023-04-25 13:50:11,596 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-jcl/5.3.27/spring-jcl-5.3.27-sources.jar
+2023-04-25 13:50:11,772 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-jcl/5.3.27/spring-jcl-5.3.27-sources.jar
+2023-04-25 13:50:11,783 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-jcl:5.3.27
+2023-04-25 13:50:12,666 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-json/2.7.11/spring-boot-starter-json-2.7.11-sources.jar
+2023-04-25 13:50:12,848 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-json/2.7.11/spring-boot-starter-json-2.7.11-sources.jar
+2023-04-25 13:50:12,858 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-json:2.7.11
+2023-04-25 13:50:20,274 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-tomcat/2.7.11/spring-boot-starter-tomcat-2.7.11-sources.jar
+2023-04-25 13:50:20,477 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-tomcat/2.7.11/spring-boot-starter-tomcat-2.7.11-sources.jar
+2023-04-25 13:50:20,490 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-tomcat:2.7.11
+2023-04-25 13:50:21,357 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-core/9.0.74/tomcat-embed-core-9.0.74-sources.jar
+2023-04-25 13:50:24,798 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-core/9.0.74/tomcat-embed-core-9.0.74-sources.jar
+2023-04-25 13:50:24,803 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat.embed:tomcat-embed-core:9.0.74
+2023-04-25 13:50:25,659 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-el/9.0.74/tomcat-embed-el-9.0.74-sources.jar
+2023-04-25 13:50:26,520 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-el/9.0.74/tomcat-embed-el-9.0.74-sources.jar
+2023-04-25 13:50:26,533 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat.embed:tomcat-embed-el:9.0.74
+2023-04-25 13:50:27,393 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.74/tomcat-embed-websocket-9.0.74-sources.jar
+2023-04-25 13:50:28,531 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.74/tomcat-embed-websocket-9.0.74-sources.jar
+2023-04-25 13:50:28,537 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat.embed:tomcat-embed-websocket:9.0.74
+2023-04-25 13:50:29,854 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-web/5.3.27/spring-web-5.3.27-sources.jar
+2023-04-25 13:50:31,704 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-web/5.3.27/spring-web-5.3.27-sources.jar
+2023-04-25 13:50:31,709 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-web:5.3.27
+2023-04-25 13:50:33,317 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-beans/5.3.27/spring-beans-5.3.27-sources.jar
+2023-04-25 13:50:34,796 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-beans/5.3.27/spring-beans-5.3.27-sources.jar
+2023-04-25 13:50:34,801 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-beans:5.3.27
+2023-04-25 13:50:35,673 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27-sources.jar
+2023-04-25 13:50:37,798 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27-sources.jar
+2023-04-25 13:50:37,803 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-webmvc:5.3.27
+2023-04-25 13:50:38,663 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-aop/5.3.27/spring-aop-5.3.27-sources.jar
+2023-04-25 13:50:40,179 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-aop/5.3.27/spring-aop-5.3.27-sources.jar
+2023-04-25 13:50:40,186 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-aop:5.3.27
+2023-04-25 13:50:41,584 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context/5.3.27/spring-context-5.3.27-sources.jar
+2023-04-25 13:50:43,744 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context/5.3.27/spring-context-5.3.27-sources.jar
+2023-04-25 13:50:43,748 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context:5.3.27
+2023-04-25 13:50:44,684 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-expression/5.3.27/spring-expression-5.3.27-sources.jar
+2023-04-25 13:50:45,487 [Worker-2: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:50:45,662 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-expression/5.3.27/spring-expression-5.3.27-sources.jar
+2023-04-25 13:50:45,669 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-expression:5.3.27
+2023-04-25 13:50:46,515 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/3.1.5/spring-cloud-starter-netflix-eureka-server-3.1.5-javadoc.jar
+2023-04-25 13:50:46,693 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:50:46,693 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:50:46,695 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:50:46,695 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:50:46,700 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:50:46,700 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:50:46,700 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:50:48,434 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/3.1.5/spring-cloud-starter-netflix-eureka-server-3.1.5-javadoc.jar
+2023-04-25 13:50:48,441 [Worker-4: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.5
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:jar:javadoc:3.1.5
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:50:49,346 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/cloud/spring-cloud-starter/3.1.6/spring-cloud-starter-3.1.6-javadoc.jar
+2023-04-25 13:50:49,517 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/cloud/spring-cloud-starter/3.1.6/spring-cloud-starter-3.1.6-javadoc.jar
+2023-04-25 13:50:49,522 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.springframework.cloud:spring-cloud-starter:3.1.6
+2023-04-25 13:50:50,675 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8-sources.jar
+2023-04-25 13:50:55,081 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8-sources.jar
+2023-04-25 13:50:55,627 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/security/spring-security-crypto/5.7.8/spring-security-crypto-5.7.8-sources.jar
+2023-04-25 13:50:55,631 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-crypto:5.7.8
+2023-04-25 13:50:56,755 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11-sources.jar
+2023-04-25 13:50:57,601 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11-sources.jar
+2023-04-25 13:50:57,770 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-actuator/2.7.11/spring-boot-starter-actuator-2.7.11-sources.jar
+2023-04-25 13:50:57,772 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-actuator:2.7.11
+2023-04-25 13:50:59,824 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11-sources.jar
+2023-04-25 13:51:00,680 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11-sources.jar
+2023-04-25 13:51:02,041 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.11/spring-boot-actuator-autoconfigure-2.7.11-sources.jar
+2023-04-25 13:51:02,044 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.11
+2023-04-25 13:51:03,159 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11-sources.jar
+2023-04-25 13:51:04,503 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11-sources.jar
+2023-04-25 13:51:05,962 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-actuator/2.7.11/spring-boot-actuator-2.7.11-sources.jar
+2023-04-25 13:51:05,967 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:2.7.11
+2023-04-25 13:51:07,068 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10-sources.jar
+2023-04-25 13:51:08,554 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10-sources.jar
+2023-04-25 13:51:09,848 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/micrometer/micrometer-core/1.9.10/micrometer-core-1.9.10-sources.jar
+2023-04-25 13:51:09,852 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-core:1.9.10
+2023-04-25 13:51:10,960 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.11/spring-boot-starter-freemarker-2.7.11-sources.jar
+2023-04-25 13:51:11,999 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-freemarker/2.7.11/spring-boot-starter-freemarker-2.7.11-sources.jar
+2023-04-25 13:51:12,004 [Worker-4: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-freemarker:2.7.11
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-freemarker:jar:sources:2.7.11
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:51:12,836 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1-javadoc.jar
+2023-04-25 13:51:14,472 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1-javadoc.jar
+2023-04-25 13:51:14,477 [Worker-4: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for xmlpull:xmlpull:1.1.3.1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact xmlpull:xmlpull:jar:javadoc:1.1.3.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:51:15,311 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/cloud/spring-cloud-starter-loadbalancer/3.1.6/spring-cloud-starter-loadbalancer-3.1.6-javadoc.jar
+2023-04-25 13:51:16,967 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/3.1.6/spring-cloud-starter-loadbalancer-3.1.6-javadoc.jar
+2023-04-25 13:51:16,978 [Worker-4: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.cloud:spring-cloud-starter-loadbalancer:3.1.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:3.1.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:587)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:227)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:556)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:541)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-04-25 13:51:18,098 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29-sources.jar
+2023-04-25 13:51:18,944 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29-sources.jar
+2023-04-25 13:51:21,240 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29-sources.jar
+2023-04-25 13:51:21,246 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-core:3.4.29
+2023-04-25 13:51:22,283 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.11/spring-boot-starter-cache-2.7.11-sources.jar
+2023-04-25 13:51:23,331 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-cache/2.7.11/spring-boot-starter-cache-2.7.11-sources.jar
+2023-04-25 13:51:23,507 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/libs-snapshot/org/springframework/boot/spring-boot-starter-cache/2.7.11/spring-boot-starter-cache-2.7.11-sources.jar
+2023-04-25 13:51:23,521 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-cache:2.7.11
+2023-04-25 13:51:24,395 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-test/2.7.11/spring-boot-starter-test-2.7.11-sources.jar
+2023-04-25 13:51:24,582 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-test/2.7.11/spring-boot-starter-test-2.7.11-sources.jar
+2023-04-25 13:51:24,588 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-test:2.7.11
+2023-04-25 13:51:25,448 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:51:25,448 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:51:25,448 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:51:25,448 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:51:25,452 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:51:25,453 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:51:25,453 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:51:27,473 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:51:27,473 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:51:27,473 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:51:27,474 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:51:27,478 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:51:27,478 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:51:27,478 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:52:31,649 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:52:32,738 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.6/spring-boot-starter-freemarker-2.7.6.pom
+2023-04-25 13:52:32,922 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.6/spring-boot-starter-freemarker-2.7.6.pom
+2023-04-25 13:52:33,135 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.pom
+2023-04-25 13:52:33,324 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.pom
+2023-04-25 13:52:33,513 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context-support/5.3.24/spring-context-support-5.3.24.pom
+2023-04-25 13:52:33,686 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context-support/5.3.24/spring-context-support-5.3.24.pom
+2023-04-25 13:52:35,059 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.pom
+2023-04-25 13:52:35,248 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.pom
+2023-04-25 13:52:35,445 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcomponents-core/4.4.15/httpcomponents-core-4.4.15.pom
+2023-04-25 13:52:35,619 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcomponents-core/4.4.15/httpcomponents-core-4.4.15.pom
+2023-04-25 13:52:35,926 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.25/reactor-core-3.4.25.pom
+2023-04-25 13:52:36,109 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.25/reactor-core-3.4.25.pom
+2023-04-25 13:52:36,420 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/addons/reactor-extra/3.4.9/reactor-extra-3.4.9.pom
+2023-04-25 13:52:36,593 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/addons/reactor-extra/3.4.9/reactor-extra-3.4.9.pom
+2023-04-25 13:52:40,208 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.6/spring-boot-starter-cache-2.7.6.pom
+2023-04-25 13:52:40,391 [Worker-1: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.6/spring-boot-starter-cache-2.7.6.pom
+2023-04-25 13:52:42,737 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:52:42,737 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:52:42,740 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:52:42,740 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:52:42,745 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:52:42,745 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:52:42,745 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:52:44,647 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.6/spring-boot-starter-freemarker-2.7.6-sources.jar
+2023-04-25 13:52:44,818 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.6/spring-boot-starter-freemarker-2.7.6-sources.jar
+2023-04-25 13:52:44,823 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-freemarker:2.7.6
+2023-04-25 13:52:45,824 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/freemarker/freemarker/2.3.31/freemarker-2.3.31-sources.jar
+2023-04-25 13:52:47,617 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/freemarker/freemarker/2.3.31/freemarker-2.3.31-sources.jar
+2023-04-25 13:52:47,622 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.freemarker:freemarker:2.3.31
+2023-04-25 13:52:48,448 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context-support/5.3.24/spring-context-support-5.3.24-sources.jar
+2023-04-25 13:52:48,790 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/spring-context-support/5.3.24/spring-context-support-5.3.24-sources.jar
+2023-04-25 13:52:48,795 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context-support:5.3.24
+2023-04-25 13:52:49,611 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13-sources.jar
+2023-04-25 13:52:50,600 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13-sources.jar
+2023-04-25 13:52:50,605 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.httpcomponents:httpclient:4.5.13
+2023-04-25 13:52:53,767 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15-sources.jar
+2023-04-25 13:52:55,295 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15-sources.jar
+2023-04-25 13:52:55,299 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.httpcomponents:httpcore:4.4.15
+2023-04-25 13:52:56,376 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.25/reactor-core-3.4.25-sources.jar
+2023-04-25 13:52:58,482 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/reactor-core/3.4.25/reactor-core-3.4.25-sources.jar
+2023-04-25 13:52:58,487 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-core:3.4.25
+2023-04-25 13:52:59,416 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/addons/reactor-extra/3.4.9/reactor-extra-3.4.9-sources.jar
+2023-04-25 13:52:59,750 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/projectreactor/addons/reactor-extra/3.4.9/reactor-extra-3.4.9-sources.jar
+2023-04-25 13:52:59,755 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor.addons:reactor-extra:3.4.9
+2023-04-25 13:53:00,595 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.6/spring-boot-starter-cache-2.7.6-sources.jar
+2023-04-25 13:53:00,774 [Worker-8: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-cache/2.7.6/spring-boot-starter-cache-2.7.6-sources.jar
+2023-04-25 13:53:00,779 [Worker-8: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-cache:2.7.6
+2023-04-25 13:53:02,826 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:53:02,827 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:53:02,834 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-25 13:53:02,851 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:53:02,855 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:53:02,855 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:53:02,855 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:54:57,735 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:54:57,735 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:54:57,735 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:54:57,735 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:54:57,738 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:54:57,738 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:54:57,738 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:55:00,072 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:55:00,072 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:55:00,072 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:55:00,073 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:55:00,075 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:55:00,075 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:55:00,075 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:55:10,570 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:55:10,570 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:55:10,577 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-25 13:55:10,582 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 13:55:10,587 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 13:55:10,587 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 13:55:10,588 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 13:55:21,416 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 13:55:21,932 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 13:55:23,769 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 13:55:23,769 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:55:23,769 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 13:55:23,770 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 13:55:25,249 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.6/spring-boot-actuator-autoconfigure-2.7.6-sources.jar
+2023-04-25 13:55:25,687 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 1.00 sec 
+2023-04-25 13:55:26,941 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator-autoconfigure/2.7.6/spring-boot-actuator-autoconfigure-2.7.6-sources.jar
+2023-04-25 13:55:26,947 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.6
+2023-04-25 13:55:27,985 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator/2.7.6/spring-boot-actuator-2.7.6-sources.jar
+2023-04-25 13:55:29,340 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-actuator/2.7.6/spring-boot-actuator-2.7.6-sources.jar
+2023-04-25 13:55:29,351 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:2.7.6
+2023-04-25 13:55:48,655 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-core/1.9.6/micrometer-core-1.9.6-sources.jar
+2023-04-25 13:55:50,048 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/io/micrometer/micrometer-core/1.9.6/micrometer-core-1.9.6-sources.jar
+2023-04-25 13:55:50,053 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-core:1.9.6
+2023-04-25 14:00:53,791 [Worker-4: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 14:00:56,914 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:00:56,914 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:00:56,917 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 14:00:56,918 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 14:00:56,922 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:00:56,922 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:00:56,922 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 14:00:59,319 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:00:59,320 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:00:59,326 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-25 14:00:59,343 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 14:00:59,347 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:00:59,347 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:00:59,347 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 14:01:03,121 [Worker-12: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.10/spring-boot-starter-freemarker-2.7.10-javadoc.jar
+2023-04-25 14:01:03,323 [Worker-12: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://rb-artifactory.bosch.com:443/artifactory/ci-da-pd-dap3-ngtrepo-mvn-release-virtual/org/springframework/boot/spring-boot-starter-freemarker/2.7.10/spring-boot-starter-freemarker-2.7.10-javadoc.jar
+2023-04-25 14:01:03,328 [Worker-12: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.springframework.boot:spring-boot-starter-freemarker:2.7.10
+2023-04-25 14:01:04,987 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:01:04,987 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:01:04,988 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 14:01:04,988 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-25 14:01:05,013 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-25 14:01:05,013 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-25 14:01:05,013 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\src\test\resources
+2023-04-25 14:01:08,631 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 14:01:09,234 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 14:01:10,952 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 14:01:10,952 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 14:01:10,952 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 14:01:10,953 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 14:01:12,483 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 1.00 sec 
+2023-04-25 14:04:26,587 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-04-25 14:04:27,030 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.serviceRegistry:com.serviceRegistry:0.0.1-SNAPSHOT @ C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry\pom.xml.
+2023-04-25 14:04:28,914 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/main/java
+2023-04-25 14:04:28,914 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 14:04:28,915 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceRegistry/src/main/resources
+2023-04-25 14:04:28,915 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceRegistry/src/test/java
+2023-04-25 14:04:30,403 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 1.00 sec 
+2023-04-25 14:06:55,651 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [345])
+2023-04-25 14:06:55,661 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
+2023-04-25 14:06:55,661 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
+2023-04-25 14:06:55,661 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
+2023-04-25 14:06:55,661 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
+2023-04-25 14:06:55,661 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
+2023-04-25 14:06:55,662 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
+2023-04-25 14:06:55,663 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
+2023-04-25 14:06:55,663 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
+2023-04-25 14:06:55,663 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
+2023-04-25 14:06:55,663 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
+2023-04-25 14:06:55,663 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
+2023-04-25 14:06:55,664 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
+2023-04-25 14:06:55,665 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
+2023-04-25 14:06:55,666 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
+2023-04-25 14:06:55,666 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
+2023-04-25 14:06:55,666 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-04-25 14:06:55,667 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [22])
+2023-04-25 14:06:55,668 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-04-25 14:06:55,668 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [584])
+2023-04-25 14:06:55,670 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\slf4j.api_1.7.36.jar
+2023-04-25 14:06:55,670 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [49])
+2023-04-25 14:06:55,671 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-04-25 14:06:55,671 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [47])
+2023-04-25 14:06:55,672 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\software\sts-4.17.1.RELEASE\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-04-25 14:06:55,682 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry":
+2023-04-25 14:06:55,682 [Worker-6: Launching Executing clean in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -Ppom.xml -B -Dstyle.color=always clean
+2023-04-25 14:07:06,493 [Worker-2: Launching Executing install in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\VQW1KOR\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\01-TiffinWala-App1\ServiceRegistry":
+2023-04-25 14:07:06,493 [Worker-2: Launching Executing install in C__Users_VQW1KOR_Documents_workspace-spring-tool-suite-4-4.17.1.RELEASE_01-TiffinWala-App1_ServiceRegistry] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -Ppom.xml -B -Dstyle.color=always install
+2023-04-26 09:20:02,200 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
